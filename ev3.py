@@ -10,13 +10,13 @@ while True:
     limpiar_esperar_screen()
     opc = menu_opciones((opciones))
     if opc == 1:
-        pass
+        registrar_pedido()
     elif opc == 2:
-        pass
+        listar_todos_pedidos()
     elif opc == 3:
-        pass
+        buscar_pedido_rut()
     elif opc == 4:
-        pass
+        imprimir_ruta_csv()
     else:
         salir()
         break
