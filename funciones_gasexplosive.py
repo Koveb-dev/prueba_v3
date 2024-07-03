@@ -220,10 +220,14 @@ def imprimir_ruta_csv():
                 limpiar_esperar_screen()
                 
         with open(f'{nombre_archivo}.csv',"w",newline="") as archivo:
+            titulos = ["RUT","CLIENTE","DIRECCION","COMUNA","CANT.5KG","CANT.15KG","TOTAL"]
             escritor = csv.writer(archivo)
+            escritor.writerow(titulos)
             for x in pedidos:
                 if x[3] == comunas[comuna-1]:
-                    lista = []
+                    
+
+                    
 
             escritor.writerow(lista)
                
